@@ -1,4 +1,3 @@
-
 'use client'
 
 import { useEffect, useState } from 'react'
@@ -69,11 +68,11 @@ export default function Page() {
       <section id="details" className="details-section" aria-label="Detalles de la celebración">
         <div className="section-inner">
           <p className="eyebrow">Reservá la fecha</p>
-          <h2>El gran día se acerca</h2>
+          <h2 style={{ color: 'rgb(77, 102, 85)' }}>El gran día se acerca</h2>
           <Countdown />
           <div className="event-card" style={{ backgroundColor: 'rgba(175, 195, 177, 1)' }}>
-            <p className="event-date">Sábado 10 de abril · 18:00 hs</p>
-            <h3>Quinta La Mona</h3>
+            <p className="event-date" style={{ color: 'rgb(111, 127, 106)' }}>Sábado 10 de abril · 18:00 hs</p>
+            <h3 style={{ color: 'rgb(77, 102, 85)' }}>Quinta La Mona</h3>
             <p>Teniente Origone 5312<br />Trujui</p>
             <a className="gold-button" style={{ backgroundColor: 'rgb(111, 127, 106)', borderRadius: '10px' }} href={mapsUrl} target="_blank" rel="noreferrer"><MapPin size={16} />Cómo llegar<ExternalLink size={13} /></a>
           </div>
@@ -87,15 +86,15 @@ export default function Page() {
             <article className="info-card">
               <Clock3 className="card-icon" size={22} strokeWidth={1.2} />
               <p className="eyebrow">Confirmación de asistencia</p>
-              <h3>Esperamos que puedas acompañarnos</h3>
-              <p>Esperamos que puedas acompañarnos en este momento tan especial. Te pedimos que completes el siguiente formulario antes del 28/02/2027. Si fuiste invitado con un acompañante, deben completar un formulario por persona.</p>
+              <h3 style={{ color: 'rgb(217, 163, 160)' }}>Esperamos que puedas acompañarnos en este momento tan especial</h3>
+              <p>Completá el siguiente formulario antes del 28/02/2027. Si fuiste invitado con un acompañante, deben completar un formulario por persona.</p>
               <a className="outline-button" style={{ borderRadius: '20px', backgroundColor: 'rgb(111, 127, 106)' }} href={formUrl} target="_blank" rel="noreferrer">Confirmar asistencia <ExternalLink size={13} /></a>
             </article>
             <article className="info-card">
               <Camera className="card-icon" size={22} strokeWidth={1.2} />
               <p className="eyebrow">Álbum compartido</p>
-              <h3>Revivamos cada momento</h3>
-              <p>Revivamos cada momento de este día a través de tus ojos. Si podés subirlas a este álbum para que todos podamos disfrutarlas.</p>
+              <h3 style={{ color: 'rgb(217, 163, 160)' }}>Revivamos cada momento de este día</h3>
+              <p>Queremos ver a través de tus ojos. Sumate a nuestro álbum compartido y subí las fotos que saques durante la fiesta.</p>
               <a className="outline-button" href={albumUrl} target="_blank" rel="noreferrer">Compartir fotos <ExternalLink size={13} /></a>
             </article>
           </div>
