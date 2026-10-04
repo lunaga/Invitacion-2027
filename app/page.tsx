@@ -1,3 +1,4 @@
+
 'use client'
 
 import { useEffect, useState } from 'react'
@@ -55,13 +56,13 @@ export default function Page() {
           {playing ? <Pause size={16} strokeWidth={1.5} /> : <Music size={17} strokeWidth={1.5} />}
         </button>
         <div className="invitation-content">
-          <p className="eyebrow">Una historia de amor</p>
-          <h1 id="couple-names" className="names"><span>Alan</span><span className="ampersand">&amp;</span><span>Mel</span></h1>
-          <p className="announcement">¡NOS CASAMOS!</p>
-          <div className="divider" aria-hidden="true"><span>✦</span></div>
+          <p className="eyebrow" style={{ fontSize: '18px' }}>Una historia de amor</p>
+          <h1 id="couple-names" className="names"><span style={{ color: 'rgb(111, 127, 106)', fontFamily: 'inherit' }}>Alan</span><span className="ampersand" style={{ color: 'rgb(217, 163, 160)' }}>&amp;</span><span style={{ color: 'rgb(111, 127, 106)' }}>Mel</span></h1>
+          <p className="announcement" style={{ color: 'rgb(111, 127, 106)' }}>¡NOS CASAMOS!</p>
+          <div className="divider" style={{ color: 'rgb(217, 163, 160)' }} aria-hidden="true"><span>✦</span></div>
           <p className="date-label">10 · 04 · 2027</p>
           <p className="invitation-copy">Queremos compartir con vos<br />el comienzo de nuestra historia.</p>
-          <button className="scroll-cue" type="button" onClick={() => document.getElementById('details')?.scrollIntoView({ behavior: 'smooth' })}><span>Conocé los detalles</span><ChevronDown size={18} strokeWidth={1.2} /></button>
+          <button className="scroll-cue" type="button" onClick={() => document.getElementById('details')?.scrollIntoView({ behavior: 'smooth' })}><span style={{ fontWeight: 700 }}>Conocé los detalles</span><ChevronDown size={18} strokeWidth={1.2} style={{ fontWeight: 700 }} /></button>
         </div>
       </section>
 
@@ -78,8 +79,8 @@ export default function Page() {
           </div>
 
           <div className="photo-grid" aria-label="Fotos de Alan y Mel">
-            <img src="/alan-mel-photo-1.jpeg" alt="Alan y Mel compartiendo un momento" />
-            <img src="/alan-mel-photo-2.jpeg" alt="Alan y Mel juntos al aire libre" />
+            <img src="/alan-mel-photo-1.png" alt="Alan y Mel compartiendo un momento" />
+            <img src="/alan-mel-photo-2.png" alt="Alan y Mel juntos al aire libre" />
           </div>
 
           <div className="info-grid">
